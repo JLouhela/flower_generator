@@ -12,9 +12,7 @@ let petal_color = null;
 let center_color = null;
 
 function setup() {
-  let min_width = 1920;
-  let min_height = 1080;
-  createCanvas(windowWidth > min_width ? windowWidth : min_width, windowHeight > min_height ? windowHeight : min_height);
+  createCanvas(windowWidth, windowHeight);
   colorMode(HSL)
 
   let bg_value = get_random_int(70, 160)
